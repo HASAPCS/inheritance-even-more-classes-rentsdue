@@ -1,18 +1,19 @@
 package com.example;
 
 public class Square extends Shape {
+    private double side;
 
-    // TODO: Define attributes for the square
+    public Square(double side) {
+        this.side=side;
+    }
 
     @Override
     public double area() {
-        // TODO: Implement the method
-        return 0;
+        return this.side*this.side;
     }
 
     @Override
     public double perimeter() {
-        // TODO: Implement the method
-        return 0;
+        return this.side*4;
     }
 }
