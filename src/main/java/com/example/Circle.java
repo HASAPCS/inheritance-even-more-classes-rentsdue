@@ -1,18 +1,19 @@
 package com.example;
 
 public class Circle extends Shape {
+    private double radius;
 
-    // TODO: Define attributes for the circle
+    public Circle(double radius) {
+        this.radius=radius;
+    }
 
     @Override
     public double area() {
-        // TODO: Implement the method
-        return 0;
+        return this.radius*this.radius*Math.PI;
     }
 
     @Override
     public double perimeter() {
-        // TODO: Implement the method
-        return 0;
+        return 2*this.radius*Math.PI;
     }
 }
